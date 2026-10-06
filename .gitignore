@@ -1,0 +1,9 @@
+# .gitignore
+venvMLProduction/
+__pycache__/
+*.pyc
+data/raw/
+data/processed/
+.ipynb_checkpoints/
+.venv/
+*.csv
