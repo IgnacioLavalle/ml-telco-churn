@@ -11,28 +11,26 @@ Abarca todo el ciclo de vida del dato: desde la limpieza y el feature engineerin
     -MLOps: Validación cruzada estratificada (OOF), Optimización de Threshold, Champion vs. Challenger.
 
 ##  Estructura del Proyecto
-
-ml-production-lab/
-├── data/
-│   ├── raw/                  # Datos originales (no modificados)
-│   └── processed/            # Datos limpios listos para modelado (telco_engineered.csv)
-├── notebooks/                # Notebooks explorativas
-│   ├── eda                   # Exploratory Data Analysis
-│   └── model_analysis        # Análisis del desempeño del modelo
-├── models/                   # Pkls de los modelos generados dinámicamente
-│   ├── final_model.pkl
-│   ├── threshold.pkl
-│   └── retrain_metadata.json
-├── src/                      # Código principal
-│   ├── data_prep.py          # Limpieza básica
-│   ├── feature_eng.py        # Creación y selección de variables
-│   ├── train.py              # Entrenamiento exhaustivo (GridSearch + SMOTE)
-│   ├── retrain.py            # Script MLOps (Champion vs Challenger)
-│   └── app.py                # API de FastAPI
-├── Dockerfile                # Configuración del contenedor de producción
-├── requirements.txt          # Dependencias y versiones del proyecto
-└── README.md
-
+    ml-production-lab/
+    ├── data/
+    │   ├── raw/                  # Datos originales (no modificados)
+    │   └── processed/            # Datos limpios listos para modelado (telco_engineered.csv)
+    ├── notebooks/                # Notebooks explorativas
+    │   ├── eda                   # Exploratory Data Analysis
+    │   └── model_analysis        # Análisis del desempeño del modelo
+    ├── models/                   # Pkls de los modelos generados dinámicamente
+    │   ├── final_model.pkl
+    │   ├── threshold.pkl
+    │   └── retrain_metadata.json
+    ├── src/                      # Código principal
+    │   ├── data_prep.py          # Limpieza básica
+    │   ├── feature_eng.py        # Creación y selección de variables
+    │   ├── train.py              # Entrenamiento exhaustivo (GridSearch + SMOTE)
+    │   ├── retrain.py            # Script MLOps (Champion vs Challenger)
+    │   └── app.py                # API de FastAPI
+    ├── Dockerfile                # Configuración del contenedor de producción
+    ├── requirements.txt          # Dependencias y versiones del proyecto
+    └── README.md
 
 
 # Instalación y uso local
